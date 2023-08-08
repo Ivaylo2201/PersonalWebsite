@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EFCB68;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background-color: #B87D4B;
+}
+
+.navbar a {
+    font-family: 'Comfortaa', cursive;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 4px 6px;
+    top: -3px;
+    border: 0;
+    border-bottom: 4px solid #E5B25D;
+    border-radius: 2px;
+    color: black;
+    background: #f3de8a;
+    position: relative;
+}
+
+.navbar a:active {
+    border-bottom-width: 2px;
+    top: 0;
+}
+
+.hello {
+    position: relative;
+    top: 70px;
+    left: 140px;
+    display: inline-block;
+}
+
+.text {
+    color: #98683e;
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    border-right: 1px solid #98683e;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s, cursor .4s step-end infinite alternate;
+}
+
+.certificates {
+    top: 90px;
+    left: -45px;
+    position: relative;
+    display: flex;
+    height: 200px;
+    margin-left: 165px;
+    animation: move-left-move-right-cer 5s linear infinite;
+}
+
+.certificate {
+    margin-left: 25px;
+}
+
+.basics {
+    height: 1px;
+}
+
+.skills-text {
+    color: #98683e;
+    text-align: center;
+    word-wrap: break-word;
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Comfortaa', cursive;
+    top: 62px;
+    left: 295px;
+    width: 450px;
+    height: 200px;
+    cursor: default;
+}
+
+.about-me-text {
+    color: #98683e;
+    text-align: center;
+    word-wrap: break-word;
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Comfortaa', cursive;
+    top: 65px;
+    left: 155px;
+    width: 450px;
+    height: 200px;
+    cursor: default;
+}
+
+.python-logo {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 20%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    animation: move-up-move-down 2.5s infinite ease-in-out;
+}
+
+.csharp-logo {
+    position: absolute;
+    height: 100px;
+    top: 15%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    animation: rotate-right 6s linear infinite;
+}
+
+.cpp-logo {
+    position: absolute;
+    height: 100px;
+    top: 45%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    animation: rotate-left 6s linear infinite;
+}
+
+.java-logo {
+    position: absolute;
+    height: 125px;
+    top: 50%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    animation: zoom-in-zoom-out 4s infinite ease-in-out;
+}
+
+.postresql-logo {
+    position: absolute;
+    height: 100px;
+    top: 67%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    animation: move-left-move-right 4s infinite ease-in-out;
+}
+
+.coding-laptop {
+    position: absolute;
+    height: 125px;
+    top: 42%;
+    left: 2px;
+    transform: translate(-50%, -50%);
+    animation: move-up-move-down 3s infinite ease-in-out;
+}
+
+.tu-varna-logo {
+    position: absolute;
+    height: 75px;
+    top: 30%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    animation: zoom-in-zoom-out 4s infinite ease-in-out;
+}
+
+.softuni-logo {
+    position: absolute;
+    height: 85px;
+    top: 55%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    animation: zoom-in-zoom-out 4s infinite ease-in-out;
+}
+
+@keyframes rotate-right {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes move-up-move-down {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-75px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes rotate-left {
+    0% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(0.75, 0.75);
+    }
+    50% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(0.75, 0.75);
+    }
+}
+
+@keyframes move-left-move-right {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
